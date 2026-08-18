@@ -13,8 +13,16 @@ also lists your most-cited papers. Tapping the widget opens the profile.
 ## Setup
 
 1. Install [Scriptable](https://apps.apple.com/app/scriptable/id1405459188) from the App Store.
-2. Create a new script in Scriptable and paste in the contents of
-   [`google-scholar-stats.js`](google-scholar-stats.js).
+2. Add the script, either way:
+
+   **One tap** — install it with [ScriptDude](https://scriptdu.de), which also tells you when a
+   new version lands here:
+
+   [![Download with ScriptDude](https://scriptdu.de/download.svg)](https://scriptdu.de?name=Google%20Scholar%20Stats&source=https%3A%2F%2Fraw.githubusercontent.com%2Fmaximiliansoelch%2Fscriptable-google-scholar-stats%2Fmain%2Fgoogle-scholar-stats.js&docs=https%3A%2F%2Fgithub.com%2Fmaximiliansoelch%2Fscriptable-google-scholar-stats)
+
+   **By hand** — open
+   [`google-scholar-stats.js`](https://raw.githubusercontent.com/maximiliansoelch/scriptable-google-scholar-stats/main/google-scholar-stats.js),
+   select all and copy, then create a new script in Scriptable and paste it in.
 3. Long-press your home screen, add a **Scriptable** widget, then long-press the widget and
    choose **Edit Widget**. Set *Script* to your script and *Parameter* to your Scholar profile
    URL or user ID.
