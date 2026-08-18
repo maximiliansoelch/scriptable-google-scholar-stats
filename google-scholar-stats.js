@@ -14,6 +14,11 @@
 // Fallback for the widget parameter, handy for previewing in-app.
 const DEFAULT_PROFILE = "";
 
+// ── Nothing below this line needs editing ───────────────────────────────────
+
+// Matches the release tag; shown in the error widget so bug reports carry it.
+const VERSION = "1.0.0";
+
 const USER_AGENT =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 " +
   "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
@@ -597,7 +602,10 @@ if (scholarId.length === 0) {
   try {
     widget = buildStatsWidget(await fetchProfileStats(scholarId));
   } catch (error) {
-    widget = buildMessageWidget("Scholar unavailable", String(error.message || error));
+    widget = buildMessageWidget(
+      "Scholar unavailable",
+      `${String(error.message || error)} · v${VERSION}`
+    );
     widget.refreshAfterDate = new Date(Date.now() + RETRY_INTERVAL_MS);
   }
 }

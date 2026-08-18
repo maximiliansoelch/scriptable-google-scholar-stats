@@ -1,0 +1,25 @@
+#!/bin/sh
+# Refuse a staged change to the widget that does not also bump VERSION.
+#
+# Installs come from main rather than from tags, so a user's copy is whatever
+# main held when they pasted it. If VERSION lags behind the code, a bug report
+# names a version that never existed.
+#
+# Enable once per clone:  git config core.hooksPath .githooks
+
+script="google-scholar-stats.js"
+
+git diff --cached --name-only | grep -qx "$script" || exit 0
+git diff --cached -U0 -- "$script" | grep -q '^+const VERSION = ' && exit 0
+
+cat >&2 <<EOF
+
+$script is staged without a VERSION bump.
+
+Bump VERSION in this same commit so the constant always describes the code
+around it. For a comment-only edit that cannot change behaviour, skip it:
+
+    git commit --no-verify
+
+EOF
+exit 1
