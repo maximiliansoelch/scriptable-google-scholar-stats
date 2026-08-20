@@ -8,8 +8,8 @@
 // Copyright (c) 2026 Maximilian Sölch
 // SPDX-License-Identifier: MIT
 //
-// Widget parameter: either a Scholar user ID ("wFmJp2sAAAAJ")
-// or a full profile URL ("https://scholar.google.com/citations?user=wFmJp2sAAAAJ&hl=en")
+// Widget parameter: either a Scholar user ID ("p9vcGMMAAAAJ")
+// or a full profile URL ("https://scholar.google.com/citations?user=p9vcGMMAAAAJ&hl=en")
 
 // Fallback for the widget parameter, handy for previewing in-app.
 const DEFAULT_PROFILE = "";
