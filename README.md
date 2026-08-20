@@ -3,12 +3,11 @@
 A widget that tracks a Google Scholar profile: total citations, h-index, i10-index, and
 citations per year. Runs on iPhone, iPad and Mac via [Scriptable](https://scriptable.app).
 
-Works in all three widget sizes. Medium and large add a citations-per-year chart, and large
-also lists your most-cited papers. Tapping the widget opens the profile.
+Works in all three widget sizes and follows your light or dark appearance. Medium and large add
+a citations-per-year chart, and large also lists your most-cited papers. Tapping the widget opens
+the profile.
 
-<img src="docs/widget-dark.png" alt="Large, medium and small widgets in dark mode" width="820">
-
-<img src="docs/widget-light.png" alt="Large, medium and small widgets in light mode" width="820">
+<img src="docs/widget-mixed.png" alt="The widget in all three sizes, dark and light" width="820">
 
 ## Setup
 
